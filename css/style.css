@@ -1,15 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .conteiner {
   position: relative;
 }
 
 .puzzleWeb {
   position: absolute;
-  height: 400px;
-  width: 800px;
-  top: 25vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "e1 e2 e3 e4 e5 e6" "e7 e8 e9 e10 e11 e12" "e13 e14 e15 e16 e17 e18" "e19 e20 e21 e22 e23 e24";
+  -ms-grid-columns: 100px 100px 100px 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  -ms-grid-rows: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px 100px;
+  height: 404px;
+  width: 604px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: 1px solid black;
   z-index: -1;
 }
